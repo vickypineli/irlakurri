@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div id="home-container">
+      <h1>IRLA-KURRI</h1>
+      <section>
+        <article className="logo-box">
+          {/* <img src={require('@/assets/img/irlakurri.png').default} alt="logo" /> */}
+          {/* <img src={require('@/assets/react.svg')} alt="logo" /> */}
+        </article>
+        <article className="login-box">
+          <div className="login-date">
+            <label>Izena:</label>
+            <input type="text" />
+          </div>
+          <div className="login-date">
+            <label>Pasahitza:</label>
+            <input className="input-internal" type="password" />
+          </div>
+          <div className="login-date">
+            <button>SARTU</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  );
 }
-
 export default App
