@@ -1,6 +1,6 @@
 function ColorMemory() {
         return (
-            <div id="home-container">
+            <div id="container">
                 <h1>color memory</h1>
             </div>
         );

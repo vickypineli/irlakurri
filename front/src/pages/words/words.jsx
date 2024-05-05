@@ -1,9 +1,9 @@
-function PlayWordByWord() {
+function Words() {
         return (
-            <div id="home-container">
+            <div id="container">
                 <h1>play word by word</h1>
             </div>
         );
     }
     
-    export default PlayWordByWord;
+    export default Words;
