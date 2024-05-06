@@ -1,8 +1,6 @@
 import logo from '../../assets/img/irlakurri.png';
 import { Link } from 'react-router-dom'; 
 const Home = () => {
-
-
   return (
     <div id="home-container">
       <h1>IRLA-KURRI</h1>
@@ -13,7 +11,7 @@ const Home = () => {
         <article className="login-box">
           <div className="login-date">
           <Link to="/activities">
-              <button>Login</button>
+              <button>sartu</button>
             </Link>
           </div>
         </article>

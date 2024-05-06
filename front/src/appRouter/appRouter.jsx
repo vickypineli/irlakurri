@@ -6,6 +6,7 @@ import ChainedWords from '../pages/chainedWords/chainedWords.jsx';
 import CountLetters from '../pages/countLetters/countLetters.jsx';
 import Words from '../pages/words/words.jsx';
 import ColorMemory from '../pages/colorMemory/colorMemory.jsx';
+import Error404 from '../pages/error404/error404.jsx'; 
 
 
 function AppRouter () {
@@ -13,18 +14,13 @@ function AppRouter () {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/activities" element={<Activities />} />
+          <Route path="/activities" element={<Activities prop1="value1" prop2="value2" />} />
           <Route path="/card-game" element={<CardGame />} />
           <Route path="/chained-words" element={<ChainedWords />} />
           <Route path="/count-letters" element={<CountLetters />} />
           <Route path="/play-word-by-word" element={<Words />} />
           <Route path="/color-memory" element={<ColorMemory />} />
-          <Route path="*" element={
-            <>
-             <h1> ERROR 404</h1>
-             <p>La pestaña solicitada no existe</p>
-            </>
-            } />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
     );
