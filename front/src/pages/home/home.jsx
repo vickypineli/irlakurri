@@ -1,9 +1,7 @@
 import logo from '../../assets/img/irlakurri.png';
-
+import { Link } from 'react-router-dom'; 
 const Home = () => {
-  const handleLogin = () => {
-    console.log("Login");
-  };
+
 
   return (
     <div id="home-container">
@@ -14,7 +12,9 @@ const Home = () => {
         </article>
         <article className="login-box">
           <div className="login-date">
-            <button onClick={handleLogin}>Login</button>
+          <Link to="/activities">
+              <button>Login</button>
+            </Link>
           </div>
         </article>
       </section>
