@@ -8,7 +8,7 @@ import Words from '../pages/words/words.jsx';
 import ColorMemory from '../pages/colorMemory/colorMemory.jsx';
 
 
-function AppRouter() {
+function AppRouter () {
     return (
       <BrowserRouter>
         <Routes>
@@ -19,6 +19,12 @@ function AppRouter() {
           <Route path="/count-letters" element={<CountLetters />} />
           <Route path="/play-word-by-word" element={<Words />} />
           <Route path="/color-memory" element={<ColorMemory />} />
+          <Route path="*" element={
+            <>
+             <h1> ERROR 404</h1>
+             <p>La pestaña solicitada no existe</p>
+            </>
+            } />
         </Routes>
       </BrowserRouter>
     );
