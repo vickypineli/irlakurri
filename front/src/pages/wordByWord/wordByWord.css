@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Slackey&display=swap");
+
+
+.text-container {
+  margin: auto;
+  display: flex;
+  width: 80vw;
+  height: 25vh;
+  border: 3px dashed #42b983;;
+  border-radius: 10px;
+}
+.button-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.text{
+  width: 65vw;
+  height: 25vh;
+  margin: auto;
+}
+
+button{
+  width: 15vw;
+  display: block;
+  font-size: 20px;
+  padding: 8px;
+  margin: 20px;
+  border-color:gray;
+  border-radius: 15px;
+  background: #42b983;
+  color:white;
+}
+.options {
+  width: 80vw;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+.option-item{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin: 15px;
+}
+.range{
+  margin: 5px;
+}
+textarea {
+  font-size: 1.3em;
+  border-radius: 10px;
+  border-color: rgb(247, 9, 88);
+  width: 80vw;
+  height: 15vh;
+ 
+}
+label{
+  margin: 5px;
+  font-size: 1.2em;
+}
+select {
+  font-size: 1.2em;
+  border-color:rgb(255, 0, 85);
+  border-radius: 15px;
+}
+h1 {
+  width: 90vw;
+  height: 40px;
+  margin: auto;
+  font-size:2.0em ;
+  font-family: 'Slackey';
+  text-transform: uppercase;
+  color: rgb(242, 117, 8);
+}
+h2{
+  font-size: 3em;
+}
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background:rgb(146, 148, 146); /* Grey background */
+  outline: none; /*Remove outline  */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: rgb(247, 9, 88); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #42b983; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
