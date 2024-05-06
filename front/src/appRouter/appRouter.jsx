@@ -6,6 +6,7 @@ import ChainedWords from '../pages/chainedWords/chainedWords.jsx';
 import CountLetters from '../pages/countLetters/countLetters.jsx';
 import Words from '../pages/words/words.jsx';
 import ColorMemory from '../pages/colorMemory/colorMemory.jsx';
+import WordByWord from '../pages/wordByWord/wordByWord.jsx';
 import Error404 from '../pages/error404/error404.jsx'; 
 
 
@@ -20,6 +21,7 @@ function AppRouter () {
           <Route path="/count-letters" element={<CountLetters />} />
           <Route path="/play-word-by-word" element={<Words />} />
           <Route path="/color-memory" element={<ColorMemory />} />
+          <Route path="/word-by-word" element={<WordByWord />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
